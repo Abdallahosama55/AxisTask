@@ -18,6 +18,8 @@ Hallo in my simple WebProject (Axis Contact)
 ## 6-  Search Input bar u can search based on name 
 ![Macbook-Air-localhost (5)](https://github.com/user-attachments/assets/42dd3cce-7361-4c5a-a320-48b09d22ca14)
 
+## 7- success message or failed message toaster after each user action in delete edit create
+![Macbook-Air-localhost (1)](https://github.com/user-attachments/assets/e2febefa-c144-4495-8eec-524b13cd6405)
 
 
 ## TAsk Made using ReactJs && Redux toolkit && redux query and tailwind 
