@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useGetUserQuery } from "../../Redux/UserApi";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import CardsInfo from "./CardInfo";
 import CreateCardModal from "./CreateCardModal";
 import { toast } from "react-toastify";
@@ -9,7 +10,6 @@ import {
   deleteCard,
   editCard,
   addCard,
-  setSearchQuery,
   setSelectedChar
 } from "../../Redux/cardsSlice";
 
@@ -70,22 +70,24 @@ function Card() {
         {filteredCards.length > 0 ? (
           filteredCards.map((item) => (
             <div key={item?.id?.value || Math.random()} className="lg:col-span-3 col-span-12">
-              <CardsInfo
-                title={item?.name?.title || "N/A"}
-                first={item?.name?.first || "N/A"}
-                last={item?.name?.last || "N/A"}
-                city={item?.location?.city || "N/A"}
-                phone={item?.phone || "N/A"}
-                imgSrc={item?.picture?.large || "default-image-url"}
-                email={item?.email || "N/A"}
-                age={item?.dob?.age || "N/A"}
-                gender={item?.gender || "N/A"}
-                postcode={item?.location?.postcode || "N/A"}
-                country={item?.location?.country || "N/A"}
-                id={item?.id?.value || "N/A"}
-                onDelete={handleDelete}
-                onEdit={handleEdit}
-              />
+              <Link to={`/contact/${item?.id?.value || Math.random()}`}>
+                <CardsInfo
+                  title={item?.name?.title || "N/A"}
+                  first={item?.name?.first || "N/A"}
+                  last={item?.name?.last || "N/A"}
+                  city={item?.location?.city || "N/A"}
+                  phone={item?.phone || "N/A"}
+                  imgSrc={item?.picture?.large || "default-image-url"}
+                  email={item?.email || "N/A"}
+                  age={item?.dob?.age || "N/A"}
+                  gender={item?.gender || "N/A"}
+                  postcode={item?.location?.postcode || "N/A"}
+                  country={item?.location?.country || "N/A"}
+                  id={item?.id?.value || "N/A"}
+                  onDelete={handleDelete}
+                  onEdit={handleEdit}
+                />
+              </Link>
             </div>
           ))
         ) : (
