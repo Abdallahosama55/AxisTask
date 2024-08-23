@@ -2,7 +2,8 @@
 Hallo in my simple WebProject (Axis Contact)
 ## 1- the fetch data  in my axis contact project
 ![Macbook-Air-localhost](https://github.com/user-attachments/assets/60b47e1d-b7af-4498-94f7-7e004be15536)
-
+## 2- User Details in dynamic routes 
+![Macbook-Air-localhost (2)](https://github.com/user-attachments/assets/80058ea3-2d92-451b-b8ba-d21e0ca2195d)
 ## 2- Create new Card  in my axis contact project
 ![Macbook-Air-localhost (1)](https://github.com/user-attachments/assets/21c94446-c021-4cc8-846a-6fa47b7a8f5c)
 
